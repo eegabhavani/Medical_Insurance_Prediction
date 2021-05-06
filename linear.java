@@ -20,6 +20,7 @@ public class linear {
 		lr.buildClassifier(dataset);
 		System.out.println(lr);
 		Evaluation lreval = new Evaluation(dataset);
+		System.out.println(lreval);
 		lreval.evaluateModel(lr, dataset);
 		System.out.println(lreval.toSummaryString());
 		
